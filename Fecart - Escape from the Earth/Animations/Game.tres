@@ -1,0 +1,93 @@
+[gd_resource type="Animation" format=2]
+
+[resource]
+
+resource_name = "FundoAnimado"
+length = 15.0
+loop = true
+step = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath("AnimationPlayer/Céu:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 3, 6, 9, 12, 15 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0, 0 ), Vector2( 0, 0 ), Vector2( 0, 0 ), Vector2( 0, 0 ), Vector2( 0, 0 ), Vector2( 0, 0 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("AnimationPlayer/1 Parte:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 3, 6, 9, 12, 15 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0, 0 ), Vector2( -635.359, -0.911559 ), Vector2( -1268.09, -1.68365 ), Vector2( -1906.39, -1.12243 ), Vector2( -2541.69, 0 ), Vector2( -3175.47, -2 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("AnimationPlayer/2 Parte:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 3, 6, 9, 12, 15 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 634, 2 ), Vector2( 0, 0 ), Vector2( -631.321, -1.99998 ), Vector2( -1268.21, -1.33331 ), Vector2( -1904.61, -3.49246e-10 ), Vector2( -2537.47, -1 ) ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("AnimationPlayer/3 Parte:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0, 3, 6, 9, 12, 15 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1263.3, 3 ), Vector2( 635.946, 1.08844 ), Vector2( 0, 0 ), Vector2( -636.565, 0.33334 ), Vector2( -1269.63, 0 ), Vector2( -1906.17, 0 ) ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("AnimationPlayer/4 Parte:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0, 3, 6, 9, 12, 15 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1899.41, 3 ), Vector2( 1273.05, 1.08844 ), Vector2( 635.324, -0.933655 ), Vector2( 0, 0 ), Vector2( -632.793, 0 ), Vector2( -1269.06, 0 ) ]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("AnimationPlayer/5 Parte:position")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"times": PoolRealArray( 0, 3, 6, 9, 12, 15 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 2537, 3 ), Vector2( 1904.64, 1.08844 ), Vector2( 1271.91, -0.933655 ), Vector2( 634.273, -0.289124 ), Vector2( 0, 0 ), Vector2( -637.471, 0 ) ]
+}
+tracks/6/type = "value"
+tracks/6/path = NodePath("AnimationPlayer/6 Parte:position")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/keys = {
+"times": PoolRealArray( 0, 3, 6, 9, 12, 15 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 3173, 3 ), Vector2( 2542.64, 1.08844 ), Vector2( 1908.91, -0.933655 ), Vector2( 1271.61, -0.289096 ), Vector2( 636.804, 0 ), Vector2( 0, 0 ) ]
+}
+

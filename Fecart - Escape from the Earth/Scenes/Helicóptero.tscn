@@ -1,0 +1,116 @@
+[gd_scene load_steps=10 format=2]
+
+[ext_resource path="res://Scripts/Helicóptero.gd" type="Script" id=1]
+[ext_resource path="res://Sprites/Inimigos_Fecart/Helicóptero/sprite_0.png" type="Texture" id=2]
+[ext_resource path="res://Sprites/Inimigos_Fecart/Helicóptero/sprite_1.png" type="Texture" id=3]
+[ext_resource path="res://Sprites/Inimigos_Fecart/Helicóptero/sprite_2.png" type="Texture" id=4]
+[ext_resource path="res://Sprites/Inimigos_Fecart/Helicóptero/sprite_3.png" type="Texture" id=5]
+
+[sub_resource type="SpriteFrames" id=1]
+
+animations = [ {
+"frames": [ ExtResource( 2 ), ExtResource( 3 ), ExtResource( 4 ), ExtResource( 5 ) ],
+"loop": true,
+"name": "default",
+"speed": 10.0
+} ]
+
+[sub_resource type="CapsuleShape2D" id=2]
+
+custom_solver_bias = 0.0
+radius = 98.0
+height = 12.3943
+
+[sub_resource type="RectangleShape2D" id=3]
+
+custom_solver_bias = 0.0
+extents = Vector2( 32.0593, 31.9722 )
+
+[sub_resource type="RectangleShape2D" id=4]
+
+custom_solver_bias = 0.0
+extents = Vector2( 31.9287, 32.0005 )
+
+[node name="Helicóptero" type="Node2D"]
+
+position = Vector2( 318.842, 507.799 )
+z_index = 1
+script = ExtResource( 1 )
+_sections_unfolded = [ "Z Index" ]
+__meta__ = {
+"_edit_group_": true
+}
+vel = 375
+limite = -100
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="." index="0"]
+
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "default"
+frame = 2
+playing = true
+
+[node name="Area2D" type="Area2D" parent="." index="1"]
+
+input_pickable = true
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+audio_bus_override = false
+audio_bus_name = "Master"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" index="0"]
+
+position = Vector2( 1.42622, -7.63808 )
+scale = Vector2( 1.15274, 0.47727 )
+shape = SubResource( 2 )
+
+[node name="Area2D2" type="Area2D" parent="." index="2"]
+
+position = Vector2( 9.7897, 314.237 )
+scale = Vector2( 1.54022, 7.76136 )
+input_pickable = true
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+audio_bus_override = false
+audio_bus_name = "Master"
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D2" index="0"]
+
+position = Vector2( 0, 0.0178173 )
+scale = Vector2( 1, 1.00052 )
+shape = SubResource( 3 )
+
+[node name="Area2D3" type="Area2D" parent="." index="3"]
+
+position = Vector2( 9.26355, -344.05 )
+scale = Vector2( 1.47906, 8.04216 )
+input_pickable = true
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+audio_bus_override = false
+audio_bus_name = "Master"
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D3" index="0"]
+
+shape = SubResource( 4 )
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_Area2D_body_entered"]
+
+[connection signal="body_entered" from="Area2D2" to="." method="_on_Area2D2_body_entered"]
+
+[connection signal="body_entered" from="Area2D3" to="." method="_on_Area2D3_body_entered"]
+
+
