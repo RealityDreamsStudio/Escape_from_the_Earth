@@ -109,6 +109,7 @@ position = Vector2( 1899.41, 3 )
 scale = Vector2( 1.95614, 1.87531 )
 z_index = -1
 frames = SubResource( 1 )
+frame = 2
 playing = true
 centered = false
 
@@ -163,7 +164,7 @@ __meta__ = {
 position = Vector2( 2.43796, 5.92075 )
 scale = Vector2( 2, 2 )
 frames = SubResource( 5 )
-frame = 7
+frame = 8
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Alien"]
