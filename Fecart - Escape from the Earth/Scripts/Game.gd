@@ -2,7 +2,7 @@ extends Node2D
 
 onready var cena = get_tree().get_current_scene()
 
-# Referencias dos nodes
+# Referências dos nodes
 var alien
 var timer
 var label

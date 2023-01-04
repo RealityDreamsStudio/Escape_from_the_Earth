@@ -12,7 +12,7 @@ config_version=4
 
 config/name="Fecart - Escape from the Earth"
 run/main_scene="res://Scenes/Game.tscn"
-config/icon="res://Sprites/Ícone/sprite_0.png"
+config/icon="res://Sprites/Icon/sprite_0.png"
 
 [display]
 
@@ -23,6 +23,10 @@ window/handheld/orientation="portrait"
 window/stretch/mode="2d"
 window/stretch/aspect="keep"
 window/handheld/emulate_touchscreen=true
+
+[editor]
+
+reimport_missing_imported_files=false
 
 [input]
 
